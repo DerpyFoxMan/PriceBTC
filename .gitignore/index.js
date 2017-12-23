@@ -15,8 +15,8 @@ bot.on('message', message => {
         message.channel.sendMessage("Liste des commandes: \n -$help \n -$BTC-USD");
     }
 
-    if (message.content === prefix + "BTC-USD") {
-        message.reply("https://min-api.cryptocompare.com/data/price?fsym=XBY&tsyms=XBY,USD");
+    if (message.content === prefix + "pBTC") {
+        message.reply("https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=BTC,USD");
         console.log("Commande BTC-USD effectuée");
     }
 });
