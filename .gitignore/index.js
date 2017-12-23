@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 var prefix = ("$")
 
 bot.on('ready', function() {
-    bot.user.setGame("$BTC-USD");
+    bot.user.setGame("$pBTC");
     console.log("Connected");
 });
 
