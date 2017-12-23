@@ -16,7 +16,7 @@ bot.on('message', message => {
     }
 
     if (message.content === prefix + "BTC-USD") {
-        message.reply("https://www.bitstamp.net/api/v2/ticker/btcusd/");
+        message.reply("https://min-api.cryptocompare.com/data/price?fsym=XBY&tsyms=XBY,USD");
         console.log("Commande BTC-USD effectuée");
     }
 });
