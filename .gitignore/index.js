@@ -6,7 +6,7 @@ var prefix = ("$")
 bot.on('ready', function() {
     bot.user.setGame("$pBTC");
     console.log("Connected");
-}); //fin de ready
+});
 
 bot.login("MzkzMjUwNTIwODk2MTEwNTkz.DSBV6Q.GzkLp-7GQDd8_stMma-X8NAfjSo");
 
@@ -19,4 +19,4 @@ bot.on('message', message => {
         message.channel.sendMessage("https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=BTC,USD");
         console.log("Commande BTC-USD effectuée");
     }
-});//fin de message
+});
