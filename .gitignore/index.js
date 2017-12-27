@@ -19,5 +19,5 @@ bot.on('message', message => {
         message.channel.sendMessage("https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=BTC,USD");
         console.log("Commande BTC-USD effectuée");
     }
-    //Poulet//
+    //
 });
