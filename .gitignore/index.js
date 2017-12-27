@@ -16,7 +16,7 @@ bot.on('message', message => {
     }
 
     if (message.content === prefix + "pBTC") {
-        message.reply("https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=BTC,USD");
+        message.channel.sendMessage("https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=BTC,USD");
         console.log("Commande BTC-USD effectuée");
     }
 });
