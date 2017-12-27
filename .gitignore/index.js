@@ -20,4 +20,8 @@ bot.on('message', message => {
         console.log("Commande BTC-USD effectuée");
     }
     ///
+    if (message.content === prefix + "pb") {
+        Discord.message(BTCPrice());
+        console.log("Commande BTC-USD effectuée");
+    }
 });
