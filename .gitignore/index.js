@@ -2,6 +2,16 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 var prefix = ("$")
+function BTCPrice() {
+    request('https://blockchain.info/de/ticker', (error, response, body) => {
+        const data = JSON.parse(body);
+        var value = (parseInt(data.USD.buy, 10) + parseInt(data.USD.sell, 10)) / 2;
+
+        return value;
+    });
+
+};
+console.log(BTCPrice());
 
 bot.on('ready', function() {
     bot.user.setGame("$pBTC");
