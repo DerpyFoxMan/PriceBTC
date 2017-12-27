@@ -9,7 +9,7 @@ function BTCPrice() {
 
         return value;
     });
-
+    
 };
 console.log(BTCPrice());
 
@@ -31,7 +31,7 @@ bot.on('message', message => {
     }
     ///
     if (message.content === prefix + "pb") {
-        Discord.message(BTCPrice());
+        BTCPrice();
         console.log("Commande BTC-USD effectuée");
     }
 });
